@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Hacked By Farhan</title>
+    <link rel="shortcut icon" href="http://i45.tinypic.com/1o6cqx.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(180deg, #0b0c10, #1f2833);
+            color: #66fcf1;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(18, 18, 18, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(102, 252, 241, 0.7);
+            position: relative;
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #ff2e63;
+            text-shadow: 0 0 10px #ff2e63;
+            margin: 10px 0;
+        }
+        .header img {
+            width: 150px;
+            border-radius: 75px;
+            margin-bottom: 10px;
+            border: 2px solid #ff2e63;
+        }
+        .section {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill, .project {
+            background: #0B0C10;
+            border: 1px solid #66fcf1;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 15px;
+            flex: 1 1 calc(30% - 10px);
+            transition: transform 0.3s, background 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.5);
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+            background: #66fcf1;
+            color: #0B0C10;
+            box-shadow: 0 0 20px rgba(102, 252, 241, 1);
+        }
+        @media (max-width: 600px) {
+            .skill, .project {
+                flex: 1 1 100%;
+            }
+        }
+        marquee {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        #typing-effect {
+            color: #ffcc00;
+            text-shadow: 0 0 5px red;
+            font-size: 1.5em;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="http://4.bp.blogspot.com/-2h8LgjUDpzY/T0fTA4EQx8I/AAAAAAAAAtU/n_W5Vby8zLU/s400/hacked.gif" alt="Hacked">
+            <h1>Hacked By Farhan</h1>
+            <p id="typing-effect"></p>
+        </div>
+        
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>Perkenalkan Nama Saya Farhan Hidayat. Saya Lahir Di Kota Palu (Prov. Sulawesi Tengah) Pada tanggal 04 Agustus 2006.</p>
+        </div>
+
+        <div class="section">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li>Sedang Menempuh Pendidikan Di PeTIK II Jombang (PPL)</li>
+                <li>Alumni Ponpes Salafiyah Al-Hikmah Angkatan VI</li>
+                <li>SMK Salafiyah Al-Hikmah</li>
+                <li>MTs AL-Hikmah</li>
+                <li>SD Inpres I wanagading</li>
+                
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Keterampilan</h2>
+            <div class="skills">
+                <div class="skill" onclick="alert('Keterampilan: Pengembangan Web')">Web Design</div>
+                <div class="skill" onclick="alert('Keterampilan: Pemrograman Python')">Pemrograman Backend</div>
+                <div class="skill" onclick="alert('Keterampilan: Database Management')">Pemrograman Frontend</div>
+                <div class="skill" onclick="alert('Keterampilan: Pengujian Perangkat Lunak')">Pemrograman javascript</div>
+                <div class="skill" onclick="alert('Keterampilan: Git dan Version Control')">Database SQL</div>
+                <div class="skill" onclick="alert('Keterampilan: Desain UI/UX')">Desain UI/UX</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <div class="projects">
+                <div class="project" onclick="alert('Projek A: Aplikasi Manajemen Tugas')">PKL certificate majoring in fisheries </div>
+                <div class="project" onclick="alert('Projek B: Website Portofolio')">Pagar Nusa Silat Certificate</div>
+                <div class="project" onclick="alert('Projek C: Sistem Informasi Akademik')">Hour of Code Certificate</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Hobby</h2>
+            <p>Silat.</p>
+        </div>
+
+        <marquee scrollamount="10">
+            Special Thanks To: PeTIK GEN-3 Is the Best
+        </marquee>
+
+        <footer>
+            &copy; 2024 Farhan Hidayat. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // Typing effect for the title
+        const text = "Hello PeTIK Lover";
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById("typing-effect").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            }
+        }
+
+        type();
+    </script>
+</body>
+</html>
